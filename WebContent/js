@@ -1,0 +1,27 @@
+
+	function validate()
+	{	
+
+		var fname=document.formvalidation.sname.value;
+		document.getElementById('MyImage').src="image/on.png";
+		var i,j;
+		var name=fname[0].toUpperCase();
+		var rep=fname.replace(fname[0], name);
+		for (i=0;i<=rep.length;i++)
+			{
+			if (rep[i]==" ")
+				{
+				i++;
+				var name1=rep[i].toUpperCase();
+				var rep1=rep.replace(rep[i], name1);
+				i--;
+				}
+			else{
+				continue;
+			}
+			}
+		alert(rep1);
+		document.getElementById('demo1').innerHTML="You Entered Name is " +rep1;
+		
+		
+	}
