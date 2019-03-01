@@ -1,9 +1,19 @@
+/**
+ * 
+ */
 
 	function validate()
 	{	
 
 		var fname=document.formvalidation.sname.value;
 		document.getElementById('MyImage').src="image/on.png";
+		if (!fname=="")
+			{
+			if (!isNaN(fname))
+				{
+				alert("Enter Name");
+				}
+			}
 		var i,j;
 		var name=fname[0].toUpperCase();
 		var rep=fname.replace(fname[0], name);
