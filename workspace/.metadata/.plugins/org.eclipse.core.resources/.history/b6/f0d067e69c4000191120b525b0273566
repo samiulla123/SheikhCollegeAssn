@@ -1,0 +1,82 @@
+package assign1;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Assign
+ */
+@WebServlet("/Assign")
+public class Assign extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		
+		String name=request.getParameter("sname");
+		String addr=request.getParameter("address");
+		String pno=request.getParameter("mno");
+		String check[]=request.getParameterValues("ch1");
+		String rd[]=request.getParameterValues("gender");
+		String city=request.getParameter("cities");
+		
+		
+		String title="Server Side";
+		
+		getset gs=new getset();
+		gs.setName(name);
+		gs.setAddr(addr);
+		gs.setPno(pno);
+		for (int i=0;i<check.length-1;i++)
+		{
+			gs.setAssign(i,check[i]);
+		}
+		for (int i=0;i<check.length-1;i++)
+		{
+			gs.setGen(i, rd[i]);
+		}
+		gs.setCity(city);
+		
+		out.print("<html><head><title>"+title+"</title></head><body>");
+		out.print("<table cellspac><tr><th>Name</th><td>"+gs.getName()+"</td></tr>");
+		out.print("<tr><th>Address</th><td>"+gs.getAddr()+"</td></tr>");
+		out.print("<tr><th>Phone</th><td>"+gs.getPno()+"</td></tr>");
+		for (int i=0;i<=check.length-1;i++)
+		{
+			out.print("<tr><th>Assignment</th><td>"+gs.getAssign()+"</td></tr>");
+		}
+		for (int i=0;i<=rd.length-1;i++)
+		{
+			out.print("<tr><th>Gender</th><td>"+gs.getGen()+"</td></tr>");
+		}
+		out.print("<tr><th>Phone</th><td>"+gs.getCity()+"</td></tr>");
+		/*RequestDispatcher rd1 =  
+             request.getRequestDispatcher("JSP/display.jsp"); 
+		 rd1.forward(request, response);
+		*/
+		out.print("<tr><th>Gender</th><td>"+city+"</td></tr></table>");
+		out.print("</body></html>");
+		
+
+	}
+
+}

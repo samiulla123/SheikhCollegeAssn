@@ -1,0 +1,41 @@
+/**
+ * 
+ */
+
+	function validate()
+	{	
+
+		var fname=document.formvalidation.sname.value;
+		document.getElementById('MyImage').src="image/on.png";
+		if (fname=="" || !isNaN(fname))
+			{
+				alert("Enter Valid Name");
+			}
+
+		else{
+			var i;
+			var name=fname[0].toUpperCase();
+			var rep=fname.replace(fname[0], name);
+		
+			for (i=0;i<=rep.length;i++)
+				{
+				if (rep[i]==" ")
+					{
+					i++;
+					var name1=rep[i].toUpperCase();
+					fname=rep.replace(rep[i], name1);
+					i--;
+					}
+				else{
+					continue;
+				}
+				}
+			alert("You Entered Name Is:" +fname);
+			document.getElementById('demo1').innerHTML="You Entered Name is " +fname;
+			}
+		
+			
+
+		
+		
+	}

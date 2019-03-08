@@ -1,0 +1,40 @@
+package assign1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class queries {
+	public static void main(String args[]){
+		System.out.print("sample text");
+	}
+	private static Connection getConnection()throws ClassNotFoundException, SQLException
+    {
+   	 
+ 
+       /*Class.forName( "COM.ibm.db2os390.sqlj.jdbc.DB2SQLJDriver" );*/
+       Connection  connection =
+               DriverManager.getConnection("jdbc:db2://localhost:50000/SAMPLE","db2admin","db2admin");
+       System.out.println( "From DAO, connection obtained " );
+      
+       return connection;
+    }
+	public void insert(getset m)
+	{
+		String sql="insert into student(name,addr,phone,assignment,gender,city)"
+			+ m.getName()
+			+ "','"
+			+ m.getAddr()
+			+ "','"
+			+ m.getPno()
+			+ "','"
+			+ m.getAssign()
+			+ "','"
+			+ m.getGen()
+			+ "',"
+			+ m.getCity()
+			+ ")";
+		Connection con=getConnection();
+		
+	}
+}

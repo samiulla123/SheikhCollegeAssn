@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+
+	function validate()
+	{	
+
+		var fname=document.formvalidation.sname.value;
+		document.getElementById('MyImage').src="image/on.png";
+		var regex=/^[a-zA-Z]+$/;
+		var ig = fname.replace(/\s/g,'');
+		if (fname=="" || !ig.match(regex))
+			{
+				alert("Enter Valid Name ");
+			}
+
+		/*else{
+			var i;
+			var name=fname[0].toUpperCase();
+			var rep=fname.replace(fname[0], name);
+		
+			for (i=0;i<=rep.length;i++)
+				{
+				if (rep[i]==" ")
+					{
+					i++;
+					var name1=rep[i].toUpperCase();
+					fname=rep.replace(rep[i], name1);
+					i--;
+					}
+				else{
+					continue;
+				}
+				}
+			alert("You Entered Name Is:" +fname);
+			document.getElementById('demo1').innerHTML="You Entered Name is " +fname;
+			}*/
+		alert("Address filed check");
+		var addr=document.formvalidation.address.value;
+		alert(addr);
+		if (addr == " ")
+			{
+				alert("Valid address");
+				document.getElementById("aadres").focus();
+			}
+			
+
+		
+		
+	}

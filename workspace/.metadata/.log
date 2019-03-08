@@ -1,0 +1,1377 @@
+!SESSION 2019-02-28 13:18:55.551 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110726_87724 (JIT enabled, AOT enabled)
+J9VM - 20110726_087724
+JIT  - r9_20101028_17488ifx17
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2019-02-28 14:11:07.053
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-02-28 14:11:07.053
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.new', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-02-28 14:11:07.053
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.open', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+
+!ENTRY com.ibm.ccl.welcome.bits 4 0 2019-02-28 14:11:20.537
+!MESSAGE An RSS feed "http://www.ibm.com/developerworks/views/rss/customrssatom.jsp?zone_by=Rational&type_by=Articles&type_by=Tutorials&search_by=Application+Developer&day=1&month=01&year=2007&max_entries=10&feed_by=rss&isGUI=true&Submit.x=14&Submit.y=8" is malformed.  News from this site is temporarily unavailable.
+
+!ENTRY com.ibm.etools.common.migration 1 0 2019-02-28 14:13:44.865
+!MESSAGE Auto Build job is currently running
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2019-02-28 14:27:56.529
+!MESSAGE IStructuredDocumentRegion management failed.
+!STACK 0
+org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementException: IStructuredDocumentRegion management failed.
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.removeStructuredDocumentRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeStructuredDocumentRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeTagName(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.regionChanged(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument._fireEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.fireStructuredDocumentEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$2(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$3.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replace(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$0(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$1.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionTextStore.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.modifyContent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.doContent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKey(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(Unknown Source)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.wmChar(Unknown Source)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2019-02-28 14:29:11.154
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2019-02-28 14:29:11.154
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@25672567),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@30ab30ab,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@4f4e4f4e)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@4cb94cb9)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@25672567),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@30ab30ab,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@4f4e4f4e)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@4cb94cb9)),sourcePriority=1064961)
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2019-02-28 15:05:39.002
+!MESSAGE IStructuredDocumentRegion management failed.
+!STACK 0
+org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementException: IStructuredDocumentRegion management failed.
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.removeStructuredDocumentRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeStructuredDocumentRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeEndTag(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.replaceRegions(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.regionsReplaced(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument._fireEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.fireStructuredDocumentEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$2(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$3.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replace(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$0(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$1.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionTextStore.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.modifyContent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.doContent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKey(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(Unknown Source)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.wmChar(Unknown Source)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2019-02-28 15:30:11.289
+!MESSAGE IStructuredDocumentRegion management failed.
+!STACK 0
+org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementException: IStructuredDocumentRegion management failed.
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.removeStructuredDocumentRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.replaceStructuredDocumentRegions(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.nodesReplaced(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument._fireEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.fireStructuredDocumentEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$2(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$3.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replace(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$0(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$1.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionTextStore.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.modifyContent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.doBackspace(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.invokeAction(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKey(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(Unknown Source)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.wmChar(Unknown Source)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2019-02-28 15:56:31.971
+!MESSAGE IStructuredDocumentRegion management failed.
+!STACK 0
+org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementException: IStructuredDocumentRegion management failed.
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.removeStructuredDocumentRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeStructuredDocumentRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeData(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.regionChanged(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument._fireEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.fireStructuredDocumentEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$2(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$3.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replace(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$0(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$1.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionTextStore.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.modifyContent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.doContent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKey(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(Unknown Source)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.wmChar(Unknown Source)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 0 2019-02-28 17:25:58.220
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.IllegalArgumentException: Path must include project and resource name: /Assignment1)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.SWT.error(Unknown Source)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Path must include project and resource name: /Assignment1
+	at org.eclipse.core.runtime.Assert.isLegal(Unknown Source)
+	at org.eclipse.core.internal.resources.Workspace.newResource(Unknown Source)
+	at org.eclipse.core.internal.resources.Container.getFile(Unknown Source)
+	at com.ibm.etools.webedit.editor.actions.design.OpenOnSelectionAction.getTargetFile(Unknown Source)
+	at com.ibm.etools.webedit.editor.actions.design.OpenOnSelectionAction.update(Unknown Source)
+	at com.ibm.etools.webedit.editor.actions.PageDesignerContributor$ToolbarUpdater.run(Unknown Source)
+	at org.eclipse.swt.widgets.RunnableLock.run(Unknown Source)
+	... 23 more
+!SESSION 2019-02-28 19:58:28.907 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110726_87724 (JIT enabled, AOT enabled)
+J9VM - 20110726_087724
+JIT  - r9_20101028_17488ifx17
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.radse.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.radse.product.v80.ide
+
+!ENTRY org.eclipse.ui 2 0 2019-02-28 20:00:15.515
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-02-28 20:00:15.515
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.new', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-02-28 20:00:15.515
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.open', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+
+!ENTRY org.eclipse.wst.xml.core 4 4 2019-02-28 22:02:20.972
+!MESSAGE IStructuredDocumentRegion management failed.
+!STACK 0
+org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementException: IStructuredDocumentRegion management failed.
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.removeStructuredDocumentRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeStructuredDocumentRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeTagName(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.XMLModelParser.changeRegion(Unknown Source)
+	at org.eclipse.wst.xml.core.internal.document.DOMModelImpl.regionChanged(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument._fireEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.fireStructuredDocumentEvent(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.internalReplaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$2(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$3.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replaceText(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.replace(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.access$0(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument$1.run(Unknown Source)
+	at org.eclipse.core.runtime.SafeRunner.run(Unknown Source)
+	at org.eclipse.wst.sse.ui.EditorExecutionContext.execute(Unknown Source)
+	at org.eclipse.wst.sse.core.internal.text.JobSafeStructuredDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionTextStore.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.projection.ProjectionDocument.replace(Unknown Source)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.modifyContent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.doContent(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKey(Unknown Source)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(Unknown Source)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.wmChar(Unknown Source)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+
+!ENTRY org.eclipse.wst.jsdt.ui 2 0 2019-03-01 03:02:11.047
+!MESSAGE The 'org.eclipse.wst.jsdt.ui.JavaNoTypeCompletionProposalComputer' proposal computer from the 'org.eclipse.wst.jsdt.ui' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+!SESSION 2019-03-04 20:05:00.199 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110726_87724 (JIT enabled, AOT enabled)
+J9VM - 20110726_087724
+JIT  - r9_20101028_17488ifx17
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.radse.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.radse.product.v80.ide
+
+!ENTRY org.eclipse.ui 2 0 2019-03-04 20:05:19.371
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-04 20:05:19.371
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.new', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-04 20:05:19.371
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.open', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SESSION 2019-03-04 23:35:24.727 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110726_87724 (JIT enabled, AOT enabled)
+J9VM - 20110726_087724
+JIT  - r9_20101028_17488ifx17
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.radse.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.radse.product.v80.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-04 23:35:28.899
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2019-03-04 23:35:30.649
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-04 23:35:30.649
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.new', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-04 23:35:30.649
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.open', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SESSION 2019-03-05 03:00:40.099 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110726_87724 (JIT enabled, AOT enabled)
+J9VM - 20110726_087724
+JIT  - r9_20101028_17488ifx17
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.radse.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.radse.product.v80.ide
+
+!ENTRY org.eclipse.ui 2 0 2019-03-05 03:00:45.677
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-05 03:00:45.677
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.new', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-05 03:00:45.677
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.open', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+
+!ENTRY com.ibm.etools.common.migration 1 0 2019-03-05 03:13:38.280
+!MESSAGE Auto Build job is currently running
+!SESSION 2019-03-05 20:01:41.597 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110726_87724 (JIT enabled, AOT enabled)
+J9VM - 20110726_087724
+JIT  - r9_20101028_17488ifx17
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.radse.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.radse.product.v80.ide
+
+!ENTRY org.eclipse.ui 2 0 2019-03-05 20:02:16.528
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-05 20:02:16.528
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.new', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-05 20:02:16.528
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.open', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-05 23:14:50.364
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-05 23:14:50.364
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-05 23:14:50.364
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-05 23:14:50.364
+!MESSAGE Invalid character constant
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:11:04.405
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:11:04.405
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:11:04.405
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:11:04.405
+!MESSAGE String literal is not properly closed by a double-quote
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:12:06.248
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:12:06.248
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:12:06.248
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:12:06.248
+!MESSAGE Syntax error on token "CSS", delete this token
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:12:33.576
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:12:33.576
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:12:33.576
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 01:12:33.576
+!MESSAGE text cannot be resolved to a variable
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 03:50:22.381
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 03:50:22.381
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 03:50:22.381
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 03:50:22.381
+!MESSAGE Syntax error on token "=", delete this token
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 03:55:31.098
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 03:55:31.098
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 03:55:31.098
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 03:55:31.098
+!MESSAGE Void methods cannot return a value
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:08:59.688
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:08:59.688
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:08:59.688
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:08:59.688
+!MESSAGE as cannot be resolved to a variable
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:09:48.298
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:09:48.298
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:09:48.298
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:09:48.298
+!MESSAGE The method setAssign(String) in the type getset is not applicable for the arguments (String[])
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:10:40.860
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:10:40.860
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:10:40.860
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:10:40.860
+!MESSAGE assign cannot be resolved to a type
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:11:00.782
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:11:00.782
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:11:00.782
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:11:00.782
+!MESSAGE Type mismatch: cannot convert from String to String[]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:12:32.953
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:12:32.953
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:12:32.953
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:12:32.953
+!MESSAGE Type mismatch: cannot convert from String[] to String
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:13:07.422
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:13:07.422
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:13:07.422
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:13:07.422
+!MESSAGE Type mismatch: cannot convert from String[] to String
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:13:26.390
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:13:26.390
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:13:26.515
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 04:13:26.515
+!MESSAGE The method setGen(String) in the type getset is not applicable for the arguments (String[])
+!SESSION 2019-03-06 20:10:08.344 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110726_87724 (JIT enabled, AOT enabled)
+J9VM - 20110726_087724
+JIT  - r9_20101028_17488ifx17
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.radse.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.radse.product.v80.ide
+
+!ENTRY org.eclipse.ui 2 0 2019-03-06 20:10:22.047
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-06 20:10:22.047
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.new', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-06 20:10:22.047
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.open', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:39:18.042
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:39:18.042
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:39:18.042
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:39:18.042
+!MESSAGE ArrayList cannot be resolved to a type
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:39:45.495
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:39:45.495
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:39:45.495
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:39:45.495
+!MESSAGE The import saagnik cannot be resolved
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:40:34.167
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:40:34.167
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:40:34.167
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:40:34.167
+!MESSAGE Student cannot be resolved to a type
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:41:38.417
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:41:38.417
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:41:38.417
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:41:38.417
+!MESSAGE Student cannot be resolved to a type
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:42:18.120
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:42:18.120
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:42:18.120
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:42:18.120
+!MESSAGE The method getAge() is undefined for the type getset
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:42:43.573
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:42:43.573
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:42:43.573
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 20:42:43.573
+!MESSAGE The method getCrs() is undefined for the type getset
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:33:53.963
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:33:53.963
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:33:53.963
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:33:53.963
+!MESSAGE Variable must provide either dimension expressions or an array initializer
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:34:11.760
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:34:11.760
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:34:11.760
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:34:11.760
+!MESSAGE assign cannot be resolved to a type
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:35:27.869
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:35:27.869
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:35:27.869
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:35:27.869
+!MESSAGE Type mismatch: cannot convert from String to String[]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:35:44.150
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:35:44.150
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:35:44.150
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:35:44.291
+!MESSAGE Type mismatch: cannot convert from String to String[]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:36:25.353
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:36:25.353
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:36:25.353
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:36:25.353
+!MESSAGE Type mismatch: cannot convert from String to String[]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:37:07.462
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:37:07.462
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:37:07.462
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:37:07.462
+!MESSAGE Type mismatch: cannot convert from String to String[]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:37:39.525
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:37:39.525
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:37:39.525
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:37:39.525
+!MESSAGE Type mismatch: cannot convert from String to String[]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:39:11.102
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:39:11.102
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:39:11.102
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:39:11.102
+!MESSAGE Type mismatch: cannot convert from String[] to String
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:40:13.524
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:40:13.524
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:40:13.524
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:40:13.524
+!MESSAGE Type mismatch: cannot convert from String to String[]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:41:39.430
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:41:39.430
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:41:39.430
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:41:39.430
+!MESSAGE This method must return a result of type String[]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:42:06.164
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:42:06.164
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:42:06.164
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:42:06.164
+!MESSAGE Type mismatch: cannot convert from String[] to String
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:46:48.913
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:46:49.022
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:46:49.022
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:46:49.022
+!MESSAGE Type mismatch: cannot convert from String[] to String
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:47:16.085
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:47:16.085
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:47:16.085
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:47:16.085
+!MESSAGE The method setAssign(int, String) in the type getset is not applicable for the arguments (int, String[])
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:47:53.022
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:47:53.022
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:47:53.022
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:47:53.022
+!MESSAGE The method setAssign(int, String) in the type getset is not applicable for the arguments (int, String[])
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:48:30.772
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:48:30.772
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:48:30.772
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 21:48:30.772
+!MESSAGE The method setAssign(int, String) in the type getset is not applicable for the arguments (int, String[])
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:05:18.221
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:05:18.393
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:05:18.393
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:05:18.393
+!MESSAGE This method must return a result of type String[]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:42:19.799
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:42:19.799
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:42:19.799
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:42:19.799
+!MESSAGE The constructor getset(int, int) is undefined
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:48:54.313
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:48:54.313
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:48:54.313
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:48:54.313
+!MESSAGE Duplicate local variable i
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:49:10.797
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:49:10.797
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:49:10.797
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:49:10.797
+!MESSAGE Duplicate local variable i
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:55:19.264
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:55:19.264
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:55:19.264
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:55:19.264
+!MESSAGE The method getAssign() is undefined for the type ArrayList<getset>
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:56:12.108
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:56:12.108
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:56:12.108
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 22:56:12.108
+!MESSAGE The constructor getset() is undefined
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:22:52.445
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:22:52.445
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:22:52.445
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:22:52.445
+!MESSAGE Syntax error on token(s), misplaced construct(s)
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:24:00.257
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:24:00.257
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:24:00.257
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:24:00.398
+!MESSAGE The method getName() is undefined for the type ArrayList<getset>
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:26:43.741
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:26:43.741
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:26:43.741
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:26:43.741
+!MESSAGE s cannot be resolved
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:27:17.912
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:27:17.912
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:27:17.912
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-06 23:27:17.912
+!MESSAGE s cannot be resolved
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-07 02:17:07.922
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-07 02:17:07.922
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-07 02:17:07.922
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-07 02:17:07.922
+!MESSAGE gs cannot be resolved
+!SESSION 2019-03-07 19:54:10.308 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260sr9-20110726_87724 (JIT enabled, AOT enabled)
+J9VM - 20110726_087724
+JIT  - r9_20101028_17488ifx17
+GC   - 20101027_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.radse.product.v80.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ibm.rational.radse.product.v80.ide
+
+!ENTRY org.eclipse.ui 2 0 2019-03-07 19:54:23.292
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-07 19:54:23.292
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.new', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-07 19:54:23.292
+!MESSAGE Commands should really have a category: plug-in='com.ibm.ccl.soa.deploy.connections.ui', id='com.ibm.ccl.soa.deploy.connections.ui.open', categoryId='com.ibm.ccl.soa.deploy.core.ui.zephyr.commands'
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-07 22:50:45.962
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-07 22:50:45.968
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-07 22:50:45.968
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-07 22:50:45.968
+!MESSAGE KWMySqlJDBC1 cannot be resolved to a type
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 00:37:52.304
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 00:37:52.304
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 00:37:52.304
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 00:37:52.304
+!MESSAGE Syntax error, insert ";" to complete BlockStatements
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 00:59:00.580
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 00:59:00.580
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 00:59:00.580
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 00:59:00.580
+!MESSAGE mail cannot be resolved
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:00:03.424
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:00:03.424
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:00:03.424
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:00:03.424
+!MESSAGE mail cannot be resolved
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:02:55.970
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:02:55.970
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:02:55.970
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:02:55.970
+!MESSAGE mail cannot be resolved
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:06:49.109
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:06:49.109
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:06:49.109
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:06:49.109
+!MESSAGE databaseConnetction cannot be resolved to a type
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:13:01.467
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:13:01.467
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:13:01.467
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:13:01.467
+!MESSAGE The method getConnection(String) in the type databaseConnection is not applicable for the arguments ()
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:13:34.045
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:13:34.045
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:13:34.045
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:13:34.045
+!MESSAGE String cannot be resolved to a variable
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:14:19.779
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:14:19.779
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:14:19.779
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:14:19.779
+!MESSAGE The method getConnetion(String) is undefined for the type databaseConnection
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:15:03.982
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:15:03.982
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:15:03.982
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:15:03.982
+!MESSAGE The method getConnetion(String) is undefined for the type databaseConnection
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:20:38.637
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:20:38.637
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:20:38.637
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:20:38.637
+!MESSAGE The method getConnection() from the type databaseConnection is not visible
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-03-08 01:44:29.706
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for State [in Connection$State.class [in com.ibm.rmi.iiop [in C:\Users\User\IBM\WebSphere\AppServer\java\jre\lib\ibmorb.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(Unknown Source)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(Unknown Source)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-03-08 01:44:29.706
+!MESSAGE Unknown javadoc format for State [in Connection$State.class [in com.ibm.rmi.iiop [in C:\Users\User\IBM\WebSphere\AppServer\java\jre\lib\ibmorb.jar]]]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:45:32.206
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:45:32.206
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:45:32.206
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:45:32.206
+!MESSAGE Unhandled exception type ClassNotFoundException
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:46:34.284
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:46:34.284
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:46:34.284
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 01:46:34.284
+!MESSAGE Syntax error on token "Connection", import expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:11:51.857
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:11:51.967
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:11:51.967
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:11:51.967
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:12:36.107
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:12:36.107
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:12:36.107
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:12:36.107
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:14:32.244
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:14:32.244
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:14:32.244
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:14:32.244
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:15:05.494
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:15:05.494
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:15:05.494
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:15:05.494
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:16:11.994
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:16:11.994
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:16:11.994
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:16:11.994
+!MESSAGE Syntax error, insert "}" to complete Block
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:17:20.993
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:17:20.993
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:17:20.993
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:17:20.993
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:14.400
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:14.400
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:14.400
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:14.400
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:24.431
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:24.431
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:24.431
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:24.431
+!MESSAGE Syntax error, insert ";" to complete Statement
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:39.790
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:39.790
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:39.790
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:18:39.790
+!MESSAGE Syntax error, insert ";" to complete Statement
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:19:40.884
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:19:40.884
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:19:40.884
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:19:40.884
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:20:31.477
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:20:31.477
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:20:31.477
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:20:31.477
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-03-08 02:20:55.196
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for j [in j.class [in com.ibm.security.krb5.internal.crypto [in C:\Users\User\IBM\WebSphere\AppServer\java\jre\lib\ibmjgssprovider.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(Unknown Source)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(Unknown Source)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(Unknown Source)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$3.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-03-08 02:20:55.196
+!MESSAGE Unknown javadoc format for j [in j.class [in com.ibm.security.krb5.internal.crypto [in C:\Users\User\IBM\WebSphere\AppServer\java\jre\lib\ibmjgssprovider.jar]]]
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:21:59.102
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:21:59.102
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:21:59.102
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:21:59.102
+!MESSAGE s cannot be resolved
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:22:29.789
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:22:29.789
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:22:29.789
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:22:29.789
+!MESSAGE Syntax error on tokens, AnnotationName expected instead
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:23:23.617
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:23:23.617
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:23:23.617
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:23:23.617
+!MESSAGE Syntax error on tokens, AnnotationName expected instead
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:42:50.368
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:42:50.368
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:42:50.368
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:42:50.368
+!MESSAGE Syntax error on tokens, AnnotationName expected instead
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:56:42.236
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:56:42.236
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:56:42.236
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:56:42.236
+!MESSAGE Unhandled exception type SQLException
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:57:20.579
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:57:20.579
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:57:20.579
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:57:20.579
+!MESSAGE Type mismatch: cannot convert from Connection to String
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:58:13.923
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:58:13.923
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:58:13.923
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:58:13.923
+!MESSAGE Duplicate local variable c
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:58:43.688
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:58:43.688
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:58:43.688
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:58:43.688
+!MESSAGE Illegal modifier for parameter c; only final is permitted
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:59:19.047
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:59:19.047
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:59:19.047
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 02:59:19.047
+!MESSAGE Illegal modifier for parameter c; only final is permitted
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:03:42.093
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:03:42.093
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:03:42.093
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:03:42.093
+!MESSAGE Syntax error on token "class", @ expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:04:35.265
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:04:35.265
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:04:35.265
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:04:35.265
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:05:31.218
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:05:31.218
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:05:31.218
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:05:31.218
+!MESSAGE Syntax error on token "}", delete this token
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:06:50.467
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:06:50.467
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:06:50.467
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:06:50.467
+!MESSAGE Syntax error, insert "Finally" to complete TryStatement
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:07:06.295
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:07:06.295
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:07:06.295
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:07:06.295
+!MESSAGE Syntax error on token "(", ; expected
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:07:50.311
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:07:50.311
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:07:50.311
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:07:50.311
+!MESSAGE Syntax error, insert ";" to complete Statement
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:08:18.186
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:08:18.186
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:08:18.186
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:08:18.186
+!MESSAGE s cannot be resolved
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:08:37.592
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:08:37.592
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:08:37.592
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:08:37.592
+!MESSAGE Syntax error, insert "}" to complete Block
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:17:22.777
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:17:22.777
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:17:22.918
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:17:22.918
+!MESSAGE Syntax error, insert "}" to complete Block
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:18:00.980
+!MESSAGE The publish encountered some problems and the application may not have been installed or it may have been successfully installed but was unable to start.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:18:00.980
+!MESSAGE The application contains validation errors. Correct the errors in the Problems view before publishing the application on the server. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:18:00.980
+!MESSAGE If you want to allow applications containing errors to be published on the server, enable the Allow applications containing errors to be published on a server check box (Windows > Preferences > Servers > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2019-03-08 03:18:00.980
+!MESSAGE Syntax error, insert "}" to complete Block

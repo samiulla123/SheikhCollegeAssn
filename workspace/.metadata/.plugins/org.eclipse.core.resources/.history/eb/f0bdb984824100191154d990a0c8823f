@@ -1,0 +1,26 @@
+package assign1;
+
+public class queries {
+	public static void main(String args[]){
+		System.out.print("sample text");
+	}
+	public void insert(getset m)
+	{
+		String sql="insert into student(name,addr,phone,assignment,gender,city)"
+			+ m.getName()
+			+ "','"
+			+ m.getAddr()
+			+ "','"
+			+ m.getPno()
+			+ "','"
+			+ m.getAssign()
+			+ "','"
+			+ m.getGen()
+			+ "',"
+			+ m.getCity()
+			+ ")";
+		
+		databaseConnection db= new databaseConnection();
+	
+	}
+}

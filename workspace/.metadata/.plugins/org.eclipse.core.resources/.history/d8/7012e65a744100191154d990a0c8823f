@@ -1,0 +1,23 @@
+package assign1;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+public class databaseConnection {
+
+	 public static void main(String  rgs[]) throws Exception
+     {
+        System.out.println("Hello World");
+        Connection  connection = getConnection ();
+     }
+ 
+     private static Connection  getConnection() throws ClassNotFoundException, SQLException
+     {
+        /*Class.forName( "COM.ibm.db2os390.sqlj.jdbc.DB2SQLJDriver" );*/
+        Connection  connection =
+                DriverManager.getConnection("jdbc:db2://localhost:50000/SAMPLE","db2admin","db2admin");
+        String str="insert into student(name, addr, phone, assignment, gender, city) values('samiulla','shivaji nagar',87342,'assignment','male','belagavi')";
+        connection.prepareStatement(str);
+        System.out.println( "From DAO, connection obtained " );
+        return connection;
+     }
+}
