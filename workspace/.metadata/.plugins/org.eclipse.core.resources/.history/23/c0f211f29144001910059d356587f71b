@@ -1,0 +1,11 @@
+package assign1;
+
+public class Demo {
+	
+	String name="val1";
+	getset ob1=new getset();
+	getset ob2=new getset();
+	
+	ob1.setDemoValues('val1','addr2',123);
+
+}

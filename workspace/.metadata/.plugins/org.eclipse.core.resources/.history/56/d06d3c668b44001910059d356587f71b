@@ -1,0 +1,158 @@
+/**
+ * 
+ */
+
+	function validate()
+	{	
+		alert("Hi");
+		var i;
+		var flag=true;
+		var fname=document.formvalidation.sname.value;
+
+		var regex=/^[a-zA-Z]+$/;
+		/*Name Validation*/
+		var ig = fname.replace(/\s/g,'');
+		if (fname=="" || !ig.match(regex))
+			{
+				alert("Enter Valid Name ");
+				flag=false;
+				document.formvalidation.sname.focus();
+				return flag;
+			}
+		if (fname.length>=20)
+			{
+			alert("Name is to long eneter less then 20 character");
+			flag=false;
+			document.formvalidation.sname.focus();
+			return flag;
+			}
+
+		/*Address Validation*/
+		var addr=document.formvalidation.address.value;
+		if (addr=="")
+			{
+			alert("Address should not be empty");
+			flag=false;
+			document.formvalidation.address.focus()
+			return flag;
+			}
+		for (i=0;i<addr.length; i++)
+		{
+			if (addr[i]=="\'")
+				{
+				alert("Address should not contain \' single colon ");
+				flag=false;
+				document.formvalidation.address.focus();
+				return flag;
+				}
+		}
+		
+		/*Mobile Number Validation*/
+		var phno=document.formvalidation.mno.value;
+		if(isNaN(phno) )
+			{
+			alert("Enter only number");
+			flag=false;
+			document.formvalidation.mno.focus();
+			return flag;
+			}
+		else if(phno=="")
+			{
+			alert("Mobile cannot be empty");
+			flag=false;
+			document.formvalidation.mno.focus();
+			return flag;
+			} 
+
+		else if(phno.length!=10)
+			{
+			alert("Enter 10 digit number");
+			flag=false;
+			document.formvalidation.mno.focus();
+			return flag;
+			}
+/*		var pno = /^\d{6-9}$/;
+		if (phno[0].match(pno))
+			{
+			alert("Enter valid mobile number ");
+			}*/
+		
+		/*Check box validation*/
+		var check1=document.getElementsByName('ch1');
+		var count=0;
+		
+		for(var i=0;i<check1.length;i++)
+			{
+				if (check1[i].checked==true)
+					{
+					count=count+1;
+					}
+			}
+		if (count!=0)
+			{
+				for (var i=0;i<check1.length;i++)
+				{
+					if(check1[i].checked==false)
+					{
+						continue;
+					}
+					
+				}
+			}
+		else if(count==0)
+			{
+				alert("Select Atleast one option");
+				flag=false;
+				document.formvalidation.mno.focus();
+				return flag;
+			}
+			
+		/*Radio button validation*/
+		var rd=document.getElementsByName('gender');
+		count=0;
+		for (var i=0;i<rd.length;i++)
+			{
+				if(rd[i].checked==true)
+					{	
+						count=count+1;
+					}
+			}
+
+		if (count==1)
+			{
+			for (var i=0;i<rd.length;i++)
+			{
+				if(rd[i].checked==true)
+				{
+					continue;
+
+				}			
+			}
+			}
+		else if (count==0)
+			{
+				alert("Select Gender");
+				flag=false;
+				return flag;
+			}
+		
+		/*Dropdown Button*/
+		var city=document.getElementById('cities');
+		var cit = city.options[city.selectedIndex].text;
+		if (cit=="")
+			{
+			alert("Select City");
+			flag=false;
+			document.formvalidation.cities.focus();
+			return flag;
+			}
+		
+		if (flag==true){
+			
+			/*window.location = "Assign";*/
+			document.formvalidation.action="Assign";
+			doucment.formvalidation.submit();
+		}
+
+		/*document.formvalidation.submit();*/
+	}

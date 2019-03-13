@@ -1,0 +1,15 @@
+package assign1;
+
+public class Demo {
+	
+
+	public static void main(String args[])
+	{
+		String name="val1";
+		String addr2="nnn";
+		int num=123;
+		getset ob1=new getset();
+		getset ob2=new getset();
+		ob1.setDemoValues(name,addr2,num);
+	}
+}

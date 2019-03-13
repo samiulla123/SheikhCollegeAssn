@@ -1,0 +1,107 @@
+package assign1;
+//Model Class(Because we use model view controller-MVC)
+public class getset {
+	private String name;
+	private String phno;
+	private String addr;
+	private String assign;
+	private String gen;
+	private String cit;
+	private String id;
+	
+	private String v1="";
+	private String v2="";
+	private int v3=0;
+	
+	public getset()
+	{
+		name="";
+		phno="";
+		addr="";
+		assign="";
+		gen="";
+		cit="";
+		id="";
+		
+		
+		
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String ide) {
+		id = ide;
+	}
+
+	public void setName(String value)
+	{
+		name=value;
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public void setAddr(String value)
+	{
+		addr=value;
+	}
+	public String getAddr()
+	{
+		return addr;
+	}
+	public void setPno(String value)
+	{
+		phno=value;
+	}
+	public String getPno()
+	{
+		return phno;
+	}
+	public void setAssign(String value)
+	{
+		assign=value;
+	}
+	
+	public String getAssign()
+	{
+		return assign;
+	}
+	
+	public void setGen(String value)
+	{
+		gen=value;
+	}
+	
+	public String getGen()
+	{
+		return gen;
+	}
+	public void setCity(String value)
+	{
+		cit=value;
+	}
+	public String getCity()
+	{
+		return cit;
+	}
+	
+	public void setDemoValues(String name,String id,int num1){
+		v1=name;
+		v2=id;
+		v3=num1;
+	}
+	public String getDemoValuesN()
+	{
+		return v1;
+	}
+	public String getDemoValuesI()
+	{
+		return v2;
+	}
+	public int getDemoValuesNum()
+	{
+		return v3;
+	}
+}

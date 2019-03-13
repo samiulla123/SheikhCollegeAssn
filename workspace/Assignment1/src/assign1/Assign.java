@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.DaoModel;
+
 /**
  * Servlet implementation class Assign
  */
@@ -38,58 +40,42 @@ public class Assign extends HttpServlet {
 		String rd[]=request.getParameterValues("gender");
 		String city=request.getParameter("cities");
 		
-		
-		String title="Server Side";
-		int len1 = check.length;
-		int len2 = rd.length;
-		getset gs=new getset(len1, len2);
+		getset gs=new getset();
+
 		gs.setName(name);
 		gs.setAddr(addr);
 		gs.setPno(pno);
-		int i=0;
+		String asgn="";
 		for (String str:check)
 		{
-			gs.setAssign(i,str);
-			i++;
+			asgn=asgn+str+",";
 		}
-		int j=0;
+		gs.setAssign(asgn);
+		String gen="";
 		for (String str2:rd)
 		{
-			gs.setGen(j, str2);
-			j++;
+			gen=gen+str2;
 		}
+		gs.setGen(gen);
 		gs.setCity(city);
-		
-		out.print("<html><head><title>"+title+"</title></head><body>");
-		out.print("<table cellspac><tr><th>Name</th><td>"+gs.getName()+"</td></tr>");
-		out.print("<tr><th>Address</th><td>"+gs.getAddr()+"</td></tr>");
-		out.print("<tr><th>Phone</th><td>"+gs.getPno()+"</td></tr>");
-		String[] assignment=gs.getAssign();
-		out.print("<tr><th>Assignment</th>");
-		for (String str: assignment)
-		{
-			out.print("<td>"+str+"</td></tr>");
-		}
-		String[] gender=gs.getGen();
-		out.print("<tr><th>Gender</th>");
-		for (String str2: gender)
-		{
-			out.print("<td>"+str2+"</td></tr>");
-		}
-		out.print("<tr><th>City</th><td>"+gs.getCity()+"</td></tr></table>");
-		
-		
+			
 
-		/*request.setAttribute("person",gs);
-		request.getRequestDispatcher("display.jsp").forward(request, response);*/
-		/*RequestDispatcher rd1 =  
-             request.getRequestDispatcher("JSP/display.jsp"); 
-		 rd1.forward(request, response);*/
-		
-		
-		out.print("</body></html>");
-		
+		/*String sql="insert into student(name,addr,phone,assignment,gender,,city) values(?,?,?,?,?,?)";*/
+		int n=DaoModel.register(name,addr,pno,asgn,gen,city,gs); //we get integer value from executeupdate method so we use int variable
+			
+		if (n!=0)
+		{
+			System.out.println("Value inserted");
+		}
+		else{
+			System.out.println("Error...... Value not inserted");
+		}
+			
+		RequestDispatcher dispatcher = request.getRequestDispatcher("JSP/display.jsp");
+		dispatcher.forward(request, response);
 
 	}
+
+
 
 }

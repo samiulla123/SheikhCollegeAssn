@@ -1,10 +1,11 @@
-#Thu Mar 07 04:58:59 PST 2019
+#Tue Mar 12 06:27:30 PDT 2019
 org.eclipse.wst.web.ui.webDevPerspectivecom.ibm.etools.webedit.editor.toolbar.paragraph=true
 Preferences.pane.paneActive=SOURCE
 Preferences.pane.paneEditRatio=67,67,865
 Preferences.pane.paneActiveTab=Source
 Preferences.pane.paneEditMaximized=SOURCE
 lastEditingMode=true
+org.eclipse.debug.ui.DebugPerspectivecom.ibm.etools.webedit.editor.toolbar.view=true
 Preferences.pane.paneVisible2=SOURCE
 Preferences.pane.paneVisible1=DESIGN
 org.eclipse.wst.web.ui.webDevPerspectivecom.ibm.etools.webedit.editor.toolbar.format=true

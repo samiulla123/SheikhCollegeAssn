@@ -1,28 +1,34 @@
 package assign1;
-
+//Model Class(Because we use model view controller-MVC)
 public class getset {
 	private String name;
 	private String phno;
 	private String addr;
-	private String assign[];
-	private String gen[];
+	private String assign;
+	private String gen;
 	private String cit;
+	private String id;
+
 	
-	public getset(int a, int b)
+	public getset()
 	{
 		name="";
 		phno="";
 		addr="";
-		assign=new String[a];
-		gen=new String[b];
+		assign="";
+		gen="";
 		cit="";
-		
+		id="";		
 	}
-	public getset()
-	{
-		
+
+	public String getId() {
+		return id;
 	}
-	
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
 	public void setName(String value)
 	{
 		name=value;
@@ -47,22 +53,22 @@ public class getset {
 	{
 		return phno;
 	}
-	public void setAssign(int pos, String check)
+	public void setAssign(String value)
 	{
-		assign[pos]=check;
+		assign=value;
 	}
 	
-	public String[] getAssign()
+	public String getAssign()
 	{
 		return assign;
 	}
 	
-	public void setGen(int pos1, String value)
+	public void setGen(String value)
 	{
-		gen[pos1]=value;
+		gen=value;
 	}
 	
-	public String[] getGen()
+	public String getGen()
 	{
 		return gen;
 	}
@@ -74,4 +80,6 @@ public class getset {
 	{
 		return cit;
 	}
+	
+
 }

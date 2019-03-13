@@ -4,60 +4,70 @@
 
 	function validate()
 	{	
+		
 		var i;
 		var flag=true;
 		var fname=document.formvalidation.sname.value;
-		document.getElementById('MyImage').src="image/on.png";
-		var regex=/^[a-zA-Z]+$/;
 
+		/*var regex=/^[a-zA-Z]+$/;*/
 		/*Name Validation*/
-		var ig = fname.replace(/\s/g,'');
-		if (fname=="" || !ig.match(regex))
+		/*var ig = fname.replace(/\s/g,'');*/
+		
+		if (fname=="")
 			{
 				alert("Enter Valid Name ");
-				document.getElementById("sname").focus();
-				return;
+				flag=false;
+				document.formvalidation.sname.focus();
+				return flag;
 			}
-		document.getElementById('demo1').innerHTML=fname;
+		if (fname.length>=20)
+			{
+			alert("Name is to long eneter less then 20 character");
+			flag=false;
+			document.formvalidation.sname.focus();
+			return flag;
+			}
 
 		/*Address Validation*/
 		var addr=document.formvalidation.address.value;
 		if (addr=="")
 			{
 			alert("Address should not be empty");
-			document.getElementById("address").focus()
-			return;
+			flag=false;
+			document.formvalidation.address.focus()
+			return flag;
 			}
-		for (i=0;i<addr.length; i++)
-		{
-			if (addr[i]=="\'")
-				{
-				alert("Address should not contain \' single colon ");
-				document.getElementById("address").focus();
-				return;
-				}
-		}
-		
+		if (addr.length>30)
+			{
+			alert("Address Length Should be less than 30 length");
+			flag=false;
+			document.formvalidation.address.focus();
+			return flag;
+			}
+			
 		/*Mobile Number Validation*/
 		var phno=document.formvalidation.mno.value;
 		if(isNaN(phno) )
 			{
 			alert("Enter only number");
+			flag=false;
 			document.formvalidation.mno.focus();
-			return;
+			return flag;
 			}
 		else if(phno=="")
 			{
 			alert("Mobile cannot be empty");
+			flag=false;
 			document.formvalidation.mno.focus();
-			return;
+			return flag;
 			} 
 
 		else if(phno.length!=10)
 			{
 			alert("Enter 10 digit number");
+			flag=false;
 			document.formvalidation.mno.focus();
-			return;
+			return flag;
 			}
 /*		var pno = /^\d{6-9}$/;
 		if (phno[0].match(pno))
@@ -90,8 +100,9 @@
 		else if(count==0)
 			{
 				alert("Select Atleast one option");
+				flag=false;
 				document.formvalidation.mno.focus();
-				return;
+				return flag;
 			}
 			
 		/*Radio button validation*/
@@ -119,7 +130,8 @@
 		else if (count==0)
 			{
 				alert("Select Gender");
-				return;
+				flag=false;
+				return flag;
 			}
 		
 		/*Dropdown Button*/
@@ -128,9 +140,17 @@
 		if (cit=="")
 			{
 			alert("Select City");
+			flag=false;
 			document.formvalidation.cities.focus();
-			return;
+			return flag;
 			}
-		document.formvalidation.action="Assign";
-		document.formvalidation.submit();
+		
+/*		if (flag==true){
+			
+			window.location = "Assign";
+			document.formvalidation.action="Assign";
+			doucment.formvalidation.submit();
+		}*/
+
+		/*document.formvalidation.submit();*/
 	}

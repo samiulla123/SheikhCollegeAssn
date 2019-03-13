@@ -1,0 +1,133 @@
+package dao;
+import java.sql.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import assign1.getset;
+
+public class DaoModel {
+
+	private static Connection connect() {
+		Connection con=null;
+		
+		
+		try {
+			Class.forName("com.ibm.db2.jcc.DB2Driver");
+			try {
+				con=DriverManager.getConnection("jdbc:db2://localhost:50000/SAMPLE","db2admin","db2admin");
+				System.out.println("Connection Established ");
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (ClassNotFoundException e) {
+			
+			e.printStackTrace();
+		}
+		
+		return con;
+	}
+	public static int register(getset gs) {
+		
+		int i=0;
+		Connection con=connect();
+		try {
+			
+			String sql="insert into student(name,addr,phone,assignment,gender,city) " 
+			+ " values('"
+			+ gs.getName()
+			+ "','"
+			+ gs.getAddr()
+			+ "','"
+			+ gs.getPno()
+			+ "','"
+			+ gs.getAssign()
+			+ "','"
+			+ gs.getGen()
+			+ "','"
+			+ gs.getCity()
+			+ "')";
+			PreparedStatement ps=con.prepareStatement(sql);
+
+			
+			i=ps.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.print("Error in Exception");
+			e.printStackTrace();
+		}
+		return i;
+	}
+	public static ResultSet selectDB() {
+		Statement statement = null;
+		ResultSet resultSet = null;
+		String sql="";
+		int i=0;
+		Connection con=connect();
+		try {
+			
+			sql="select * from student";
+			statement=con.createStatement();
+/*			ps.setString(1, gs.getName());
+			ps.setString(2, gs.getAddr());
+			ps.setString(3, gs.getPno());
+			ps.setString(4, gs.getAssign());
+			ps.setString(5, gs.getGen());
+			ps.setString(6, gs.getCity());*/
+			
+			resultSet=statement.executeQuery(sql);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.print("Error in select Exception");
+			e.printStackTrace();
+		}
+		return resultSet;
+	}
+	
+	public static ResultSet listDB() {
+		Statement statement = null;
+		ResultSet resultSet = null;
+		String sql="";
+		Connection con=connect();
+		try {
+			System.out.print("listDB method");
+			sql="select name, addr, phone from student";
+			statement=con.createStatement();
+			
+			resultSet=statement.executeQuery(sql);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.print("Error in select Exception");
+			e.printStackTrace();
+		}
+		return resultSet;
+	}
+	
+	public static ResultSet deleteDB(getset gs) {
+		Statement statement = null;
+		ResultSet resultSet = null;
+		String sql="";
+		Connection con=connect();
+		try {
+			System.out.print("Delete method");
+			sql="select id from student";
+			statement=con.createStatement();
+			
+			resultSet=statement.executeQuery(sql);
+			String del="delete from student where"+resultSet+"=="+gs.getId();
+			resultSet=statement.executeUpdate(del);
+			System.out.print("Deleted Sucessesfully");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.print("Error in select Exception");
+			e.printStackTrace();
+		}
+		return resultSet;
+	}
+
+	
+
+}

@@ -1,0 +1,10 @@
+package assign1;
+
+public class Demo {
+	
+	
+	getset ob1=new getset();
+	getset ob2=new getset();
+	
+
+}
